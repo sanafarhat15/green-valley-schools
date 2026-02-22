@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Valley High School - Information</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f8f6;
+color:#333;
+}
+
+header{
+background:#0f5132;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.main-menu{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:80px 20px;
+flex-wrap:wrap;
+}
+
+.menu-card{
+background:white;
+padding:40px;
+width:280px;
+text-align:center;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+cursor:pointer;
+transition:0.4s;
+}
+
+.menu-card:hover{
+transform:translateY(-10px);
+background:#20c997;
+color:white;
+}
+
+.page{
+display:none;
+padding:80px 10%;
+}
+
+.page h2{
+text-align:center;
+margin-bottom:30px;
+color:#0f5132;
+}
+
+.back-btn{
+display:inline-block;
+margin-top:40px;
+padding:12px 30px;
+background:#198754;
+color:white;
+border-radius:30px;
+cursor:pointer;
+text-decoration:none;
+}
+
+.back-btn:hover{
+background:#145c32;
+}
+
+footer{
+background:#083c26;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Green Valley High School</h1>
+<p>School Information Portal</p>
+</header>
+
+<!-- MAIN MENU -->
+<div id="home" class="main-menu">
+
+<div class="menu-card" onclick="showPage('safety')">
+<h3>Safety With Us</h3>
+<p>Learn about student safety & security</p>
+</div>
+
+<div class="menu-card" onclick="showPage('rules')">
+<h3>School Rules</h3>
+<p>Read discipline and conduct rules</p>
+</div>
+
+<div class="menu-card" onclick="showPage('anthem')">
+<h3>School Anthem</h3>
+<p>View our official school anthem</p>
+</div>
+
+</div>
+
+<!-- SAFETY PAGE -->
+<div id="safety" class="page">
+<h2>Safety With Us</h2>
+<p>
+At Green Valley High School, student safety is our top priority. 
+Our campus is secured with 24/7 CCTV surveillance and trained security staff.
+Visitor entry is monitored and recorded.
+</p>
+
+<p>
+We conduct regular fire drills, emergency preparedness training,
+and awareness programs on personal safety and cyber safety.
+</p>
+
+<p>
+Our school buses are GPS enabled and monitored for safe transportation.
+All staff members are trained in child protection policies.
+</p>
+
+<a class="back-btn" onclick="goHome()">Back to Home</a>
+</div>
+
+<!-- RULES PAGE -->
+<div id="rules" class="page">
+<h2>School Rules & Discipline</h2>
+
+<ul style="line-height:2;">
+<li>Students must wear proper school uniform.</li>
+<li>Maintain punctuality and regular attendance.</li>
+<li>Respect teachers, staff, and fellow students.</li>
+<li>No use of mobile phones inside campus.</li>
+<li>Maintain cleanliness in classrooms.</li>
+<li>Follow examination rules strictly.</li>
+<li>Bullying or misconduct will not be tolerated.</li>
+<li>Parents must inform school in case of absence.</li>
+</ul>
+
+<a class="back-btn" onclick="goHome()">Back to Home</a>
+</div>
+
+<!-- ANTHEM PAGE -->
+<div id="anthem" class="page">
+<h2>School Anthem</h2>
+
+<p style="line-height:1.8;">
+Green Valley High, we stand with pride,<br>
+With knowledge and courage as our guide.<br>
+Through learning and values strong and true,<br>
+We strive for excellence in all we do.<br><br>
+
+With unity, discipline, and respect,<br>
+Our dreams and goals we will protect.<br>
+Green Valley High, forever we say,<br>
+We shine with honor every day.
+</p>
+
+<a class="back-btn" onclick="goHome()">Back to Home</a>
+</div>
+
+<!-- PREMIUM FOOTER START -->
+
+<footer class="premium-footer">
+
+<div class="footer-container">
+
+<div class="footer-box">
+<h2>Green Valley High School</h2>
+<p>
+Shaping young minds with excellence, discipline, and innovation.
+Committed to holistic education and bright futures.
+</p>
+</div>
+
+<div class="footer-box">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Academics</a></li>
+<li><a href="#">Admissions</a></li>
+<li><a href="#">Facilities</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+
+<div class="footer-box">
+<h3>Contact Information</h3>
+<p>
+📍 Main Road, Education City,<br>
+Your District, Your State – 000000
+</p>
+<p>
+📞 +91 98765 43210<br>
+✉ info@greenvalleyhighschool.com
+</p>
+</div>
+
+<div class="footer-box">
+<h3>Follow Us</h3>
+<div class="social-icons">
+<a href="#">🌐</a>
+<a href="#">📘</a>
+<a href="#">📷</a>
+<a href="#">▶</a>
+</div>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 Green Valley High School | All Rights Reserved</p>
+</div>
+
+</footer>
+
+<style>
+
+.premium-footer{
+background:#083c26;
+color:white;
+padding-top:60px;
+}
+
+.footer-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+padding:0 10% 50px;
+}
+
+.footer-box h2{
+margin-bottom:15px;
+}
+
+.footer-box h3{
+margin-bottom:15px;
+}
+
+.footer-box p{
+line-height:1.8;
+font-size:14px;
+}
+
+.footer-box ul{
+list-style:none;
+}
+
+.footer-box ul li{
+margin-bottom:10px;
+}
+
+.footer-box ul li a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.footer-box ul li a:hover{
+color:#20c997;
+padding-left:5px;
+}
+
+.social-icons a{
+display:inline-block;
+margin-right:15px;
+font-size:20px;
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.social-icons a:hover{
+color:#20c997;
+transform:scale(1.2);
+}
+
+.footer-bottom{
+background:#062a1b;
+text-align:center;
+padding:15px;
+font-size:14px;
+}
+
+</style>
+
+<!-- PREMIUM FOOTER END -->
+
+<script>
+function showPage(pageId){
+document.getElementById("home").style.display="none";
+document.getElementById(pageId).style.display="block";
+}
+
+function goHome(){
+document.getElementById("home").style.display="flex";
+document.getElementById("safety").style.display="none";
+document.getElementById("rules").style.display="none";
+document.getElementById("anthem").style.display="none";
+}
+</script>
+
+</body>
+</html>
